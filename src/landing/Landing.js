@@ -3,13 +3,8 @@ import { Link } from 'react-router-dom'
 
 import ScrollSnap from 'scroll-snap'
 
-// import SectionOne from "./landing/SectionOne"
-// import SectionTwo from "./landing/SectionTwo"
-// import SectionThree from "./landing/SectionThree"
-// import SectionFour from "./landing/SectionFour"
-import About from "../About"
-import WorkExperience from "../WorkExperience"
-
+import { Row, Container, Col } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "../styles/styles.scss"
 
 function callback() {
@@ -17,6 +12,7 @@ function callback() {
   }
 
 class Landing extends React.Component {
+
     container = React.createRef()
 
     bindScrollSnap() {
@@ -26,7 +22,6 @@ class Landing extends React.Component {
         timeout: 10,
         duration: 100,
       })
-  
       snapElement.bind(callback)
     }
   
@@ -38,11 +33,38 @@ class Landing extends React.Component {
     return (
         <div>
             <div id="container" ref={this.container}>
+                <div className="containerFluid h-100">
+                    <header class="masthead">
+                        <div class="container h-100">
+                            <div class="row align-items-center" style={{ marginTop: '20px' }}>
+                                <div class="col-4 text-right header">
+                                    July 19, 2020<br/><br/><br/>
+                                </div>
+                                <div class="col-4 text-right header">
+                                    Contact<br/>
+                                    gideonchrapko@hotmail.ca<br/><br/>
+                                </div>
+                                <div class="col-2 text-right header">
+                                    Location<br/>
+                                    Vancouver, BC, Canada<br/><br/>
+                                </div>
+                                <div class="col-2 text-right header">
+                                    Social <br/>
+                                    Behance <br/>
+                                    Linkedin
+                                </div>
+                            </div>
+                            <div class="row align-items-center" style={{ marginTop: '20px' }}>
+                                <div class="col-2 text-left header">
+                                    <Link to="/About">About</Link><br/>
+                                    <Link to="/WorkExperience">Work Experience</Link>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                </div>
                 <div className="page first-page">
-                    <Link to="/About">About</Link>
-                    <Link to="/WorkExperience">Work Experience</Link>
-                    <div>Landing</div>
-                    <div className="hint">scroll down</div>
+                    <div>Info</div>
                 </div>
                 <div className="page second-page">
                     <div>ProjectOne</div>
