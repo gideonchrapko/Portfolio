@@ -3,7 +3,17 @@ import { Link } from 'react-router-dom'
 
 import ScrollSnap from 'scroll-snap'
 
-import { Row, Container, Col } from 'react-bootstrap';
+import Arrow from './skins/arrow.png';
+import Location from './skins/location.png';
+import BlueBar from './skins/bluebar.png';
+import GreenBar from './skins/greenbar.png';
+import YellowBar from './skins/yellowbar.png';
+import OrangeArrow from './skins/orangearrow.png';
+import PinkArrow from './skins/pinkarrow.png'
+import Background from './skins/background.png'
+
+
+import { Row, Container, Col, Image } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../styles/styles.scss"
 
@@ -34,28 +44,40 @@ class Landing extends React.Component {
         <div>
             <div id="container" ref={this.container}>
                 <div className="containerFluid h-100">
-                    <header class="masthead">
-                        <div class="container h-100">
-                            <div class="row align-items-center" style={{ marginTop: '20px' }}>
-                                <div class="col-4 text-right header">
+                    <header className="masthead">
+                        <Image src={Background} style={{ backgroundBlendMode: "multiply" }} className="background" />
+                        {/* <Image src={Arrow} style={{ backgroundBlendMode: "multiply" }} id="arrow" />
+                        <Image src={Location} style={{ backgroundBlendMode: "multiply" }} id="location" />
+                        <div id="body" ></div>
+                        <div id="head" ></div>
+                        <Image src={BlueBar} style={{ backgroundBlendMode: "multiply" }} id="bluebar" />
+                        <Image src={GreenBar} style={{ backgroundBlendMode: "multiply" }} id="greenbar" />
+                        <Image src={YellowBar} style={{ backgroundBlendMode: "multiply" }} id="yellowbar" />
+                        <Image src={OrangeArrow} style={{ backgroundBlendMode: "multiply" }} id="orangearrow" />
+                        <Image src={PinkArrow} style={{ backgroundBlendMode: "multiply" }} id="pinkarrow" /> */}
+                    </header>
+                    <header className="masthead">
+                        <div className="container h-100">
+                            <div className="row align-items-center" style={{ marginTop: '20px' }}>
+                                <div className="col-4 text-right header">
                                     July 19, 2020<br/><br/><br/>
                                 </div>
-                                <div class="col-4 text-right header">
+                                <div className="col-4 text-right header">
                                     Contact<br/>
                                     gideonchrapko@hotmail.ca<br/><br/>
                                 </div>
-                                <div class="col-2 text-right header">
+                                <div className="col-2 text-right header">
                                     Location<br/>
                                     Vancouver, BC, Canada<br/><br/>
                                 </div>
-                                <div class="col-2 text-right header">
+                                <div className="col-2 text-right header">
                                     Social <br/>
                                     Behance <br/>
                                     Linkedin
                                 </div>
                             </div>
-                            <div class="row align-items-center" style={{ marginTop: '20px' }}>
-                                <div class="col-2 text-left header">
+                            <div className="row align-items-center" style={{ marginTop: '20px' }}>
+                                <div className="col-2 text-left header">
                                     <Link to="/About">About</Link><br/>
                                     <Link to="/WorkExperience">Work Experience</Link>
                                 </div>

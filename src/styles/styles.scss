@@ -71,3 +71,12 @@ body {
     border: 2px solid black;
     padding: 10px;
   }
+
+  .background {
+    width: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
