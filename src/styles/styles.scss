@@ -55,25 +55,26 @@ body {
   bottom: 20%;
   font-size: 16px;
 }
+// .masthead {
+//     width: 100vw;
+//     font-family: sans-serif;
+//     font-size: 15px;
+//     position: fixed;
+//     z-index: -1;
+//   }
 .masthead {
-    width: 100vw;
-    font-family: sans-serif;
-    font-size: 15px;
-    position: fixed;
-    z-index: 1;
-  }
-
-  .header {
+    background-blend-mode: screen;
+}
+  .frame {
     border-radius: 20px;
     border: 2px solid black;
-    padding: 10px;
+    padding: 5px;
   }
 
   .background {
     width: 100%;
-
-    /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    mix-blend-mode: multiply;
   }

@@ -1,18 +1,9 @@
 import React from "react";
 import { Link } from 'react-router-dom'
-
 import ScrollSnap from 'scroll-snap'
-
-import Arrow from './skins/arrow.png';
-import Location from './skins/location.png';
-import BlueBar from './skins/bluebar.png';
-import GreenBar from './skins/greenbar.png';
-import YellowBar from './skins/yellowbar.png';
-import OrangeArrow from './skins/orangearrow.png';
-import PinkArrow from './skins/pinkarrow.png'
-import Background from './skins/background.png'
-
-
+import BOne from "./skins/bOne.png"
+import BTwo from "./skins/bTwo.png"
+import BThree from "./skins/bThree.png"
 import { Row, Container, Col, Image } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../styles/styles.scss"
@@ -43,49 +34,42 @@ class Landing extends React.Component {
     return (
         <div>
             <div id="container" ref={this.container}>
-                <div className="containerFluid h-100" style={{ backgroundColor: "green" }}>
-                    {/* <header className="masthead">
-                        <Image src={Background} style={{ backgroundBlendMode: "multiply" }} className="background" />
-                        <Image src={Arrow} style={{ backgroundBlendMode: "multiply" }} id="arrow" />
-                        <Image src={Location} style={{ backgroundBlendMode: "multiply" }} id="location" />
-                        <div id="body" ></div>
-                        <div id="head" ></div>
-                        <Image src={BlueBar} style={{ backgroundBlendMode: "multiply" }} id="bluebar" />
-                        <Image src={GreenBar} style={{ backgroundBlendMode: "multiply" }} id="greenbar" />
-                        <Image src={YellowBar} style={{ backgroundBlendMode: "multiply" }} id="yellowbar" />
-                        <Image src={OrangeArrow} style={{ backgroundBlendMode: "multiply" }} id="orangearrow" />
-                        <Image src={PinkArrow} style={{ backgroundBlendMode: "multiply" }} id="pinkarrow" />
-                    </header> */}
+                <div className="containerFluid h-100">
                     <header className="masthead">
+                        <Image src={BOne} style={{ left: "10px", top: "60px", height: "100vh", width: "auto", position: "fixed", zIndex: "-9" }} className="background" />
+                        <Image src={BTwo} style={{ top: "30px", right: "5px", height: "20vh", width: "auto", position: "fixed", zIndex: "-9" }} className="background" />
+                        <Image src={BThree} style={{ right: "10px", top: "-80px", height: "100vh", width: "auto", position: "fixed", zIndex: "-9" }} className="background" />
+                    </header>
+                    <header className="masthead" style={{ position: "fixed", width: "100vw" }}>
                         <div className="container h-100">
-                            <div className="row align-items-center" style={{ marginTop: '20px', backgroundColor: "blue" }}>
-                                <div className="col-4 text-right header">
+                            <div className="row frame" style={{ marginTop: '20px' }}>
+                                <div className="col-4 text-right">
                                     July 19, 2020<br/><br/><br/>
                                 </div>
-                                <div className="col-4 text-right header">
+                                <div className="col-4 text-right">
                                     Contact<br/>
                                     gideonchrapko@hotmail.ca<br/><br/>
                                 </div>
-                                <div className="col-2 text-right header">
+                                <div className="col-2 text-right">
                                     Location<br/>
                                     Vancouver, BC, Canada<br/><br/>
                                 </div>
-                                <div className="col-2 text-right header">
+                                <div className="col-2 text-right">
                                     Social <br/>
                                     Behance <br/>
                                     Linkedin
                                 </div>
                             </div>
                             <div className="row align-items-center" style={{ marginTop: '20px' }}>
-                                <div className="col-2 text-left header" style={{ zIndex: "10000", position: "fixed" }}>
-                                    <Link to="/About" style={{ zIndex: "10000", position: "fixed" }}>About</Link><br/>
-                                    <Link to="/WorkExperience">Work Experience</Link>
+                                <div className="col-2 text-left frame">
+                                    <Link to="/About">About</Link><br/>
+                                    <Link to="/WorkExperience">Work Experience</Link><br/><br/>
                                 </div>
                             </div>
                         </div>
                     </header>
                 </div>
-                <div className="page first-page" style={{ backgroundColor: "yellow" }}>
+                <div className="page first-page">
                     <div>Info</div>
                 </div>
                 <div className="page second-page">
