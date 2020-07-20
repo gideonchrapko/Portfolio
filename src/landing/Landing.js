@@ -25,7 +25,6 @@ class Landing extends React.Component {
       })
       snapElement.bind(callback)
     }
-  
     componentDidMount() {
       this.bindScrollSnap()
     }
@@ -36,23 +35,23 @@ class Landing extends React.Component {
             <div id="container" ref={this.container}>
                 <div className="containerFluid h-100">
                     <header className="masthead">
-                        <Image src={BOne} style={{ left: "30px", top: "60px", height: "100vh", width: "auto", position: "fixed", zIndex: "-9" }} className="background" />
-                        <Image src={BTwo} style={{ top: "30px", right: "5px", height: "20vh", width: "auto", position: "fixed", zIndex: "-9" }} className="background" />
-                        <Image src={BThree} style={{ right: "40px", top: "-80px", height: "100vh", width: "auto", position: "fixed", zIndex: "-9" }} className="background" />
+                        <Image src={BOne} style={{ left: "20px", top: "60px", height: "100vh", width: "auto", position: "fixed", zIndex: "-9" }} className="background" />
+                        <Image src={BTwo} style={{ top: "30px", right: "45px", height: "auto", width: "40vw", position: "fixed", zIndex: "-9" }} className="background" />
+                        <Image src={BThree} style={{ right: "20px", top: "-80px", height: "100vh", width: "auto", position: "fixed", zIndex: "-9" }} className="background" />
                     </header>
-                    <header className="masthead" style={{ position: "fixed", width: "100vw", zIndex: "9" }}>
+                    <header className="masthead" style={{ position: "fixed", width: "100%", zIndex: "9" }}>
                         <div className="container h-100">
                             <div className="row frame" style={{ marginTop: '20px' }}>
                                 <div className="col-4 text-right">
                                     July 19, 2020<br/><br/><br/>
                                 </div>
                                 <div className="col-4 text-right">
-                                    Contact<br/>
-                                    gideonchrapko@hotmail.ca<br/><br/>
-                                </div>
-                                <div className="col-2 text-right">
                                     Location<br/>
                                     Vancouver, BC, Canada<br/><br/>
+                                </div>
+                                <div className="col-2 text-right">
+                                    Contact<br/>
+                                    gideonchrapko@hotmail.ca<br/><br/>
                                 </div>
                                 <div className="col-2 text-right">
                                     Social <br/>
