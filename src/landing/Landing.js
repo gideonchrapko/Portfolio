@@ -1,10 +1,14 @@
 import React from "react";
 import { Link } from 'react-router-dom'
 import ScrollSnap from 'scroll-snap'
+import { Row, Container, Col, Image } from 'react-bootstrap';
+
 import BOne from "./skins/bOne.png"
 import BTwo from "./skins/bTwo.png"
 import BThree from "./skins/bThree.png"
-import { Row, Container, Col, Image } from 'react-bootstrap';
+import PinkArrow from "./skins/pinkarrow.png"
+import OrangeArrow from "./skins/orangearrow.png"
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../styles/styles.scss"
 
@@ -41,8 +45,8 @@ class Landing extends React.Component {
                     </header>
                     <header className="masthead" style={{ position: "fixed", width: "100%", zIndex: "9" }}>
                         <div className="container h-100">
-                            <div className="row frame" style={{ marginTop: '20px' }}>
-                                <div className="col-4 text-right">
+                            <div className="row frame" style={{ marginTop: "20px" }}>
+                                <div className="col-4 text-left">
                                     July 19, 2020<br/><br/><br/>
                                 </div>
                                 <div className="col-4 text-right">
@@ -51,7 +55,7 @@ class Landing extends React.Component {
                                 </div>
                                 <div className="col-2 text-right">
                                     Contact<br/>
-                                    gideonchrapko@hotmail.ca<br/><br/>
+                                    Email<br/><br/>
                                 </div>
                                 <div className="col-2 text-right">
                                     Social <br/>
@@ -60,16 +64,34 @@ class Landing extends React.Component {
                                 </div>
                             </div>
                             <div className="row align-items-center" style={{ marginTop: '20px' }}>
-                                <div className="col-2 text-left frame">
-                                    <Link to="/About">About</Link><br/>
-                                    <Link to="/WorkExperience">Work Experience</Link><br/><br/>
+                                <div className="col-lg-2 col-md-2 col-4 text-left frame">
+                                    <Link to="/About" style={{ color: "black", textDecoration: "none" }}>
+                                        About
+                                    </Link><br/>
+                                    <Link to="/WorkExperience" style={{ color: "black", textDecoration: "none" }}>
+                                        Work Experience
+                                    </Link><br/><br/>
                                 </div>
                             </div>
                         </div>
                     </header>
                 </div>
+                <header className="masthead">
+                        <Image src={PinkArrow} style={{ top: "60px", height: "100vh", width: "auto", position: "fixed", zIndex: "-9" }} className="background" />
+                        <Image src={OrangeArrow} style={{ top: "30px", height: "auto", width: "40vw", position: "fixed", zIndex: "-9" }} className="background" />
+                    </header>
                 <div className="page first-page">
-                    <div>Info</div>
+                    <div style={{ fontSize: "60pt", WebkitTextStroke: "6px", textAlign: "center", marginTop: "200px" }}>
+                            Gideon Chrapko
+                        <br/>
+                        <div style={{ fontSize: "20pt", WebkitTextStroke: "3px", marginTop: "-20px" }}>
+                            UI/UX Design Portfolio
+                        </div>
+                        <br/>
+                        <div style={{ fontSize: "10pt", WebkitTextStroke: "0px", marginTop: "-100px" }}>
+                            Scroll
+                        </div>
+                    </div>
                 </div>
                 <div className="page second-page">
                     <div>ProjectOne</div>
