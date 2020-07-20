@@ -56,14 +56,11 @@ body {
   font-size: 16px;
 }
 .masthead {
-    height: 100vh;
     width: 100vw;
-    min-height: 500px;
     font-family: sans-serif;
-    // font-weight: 100;
     font-size: 15px;
     position: fixed;
-    z-index: -1;
+    z-index: 1;
   }
 
   .header {

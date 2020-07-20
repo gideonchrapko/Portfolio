@@ -43,10 +43,10 @@ class Landing extends React.Component {
     return (
         <div>
             <div id="container" ref={this.container}>
-                <div className="containerFluid h-100">
-                    <header className="masthead">
+                <div className="containerFluid h-100" style={{ backgroundColor: "green" }}>
+                    {/* <header className="masthead">
                         <Image src={Background} style={{ backgroundBlendMode: "multiply" }} className="background" />
-                        {/* <Image src={Arrow} style={{ backgroundBlendMode: "multiply" }} id="arrow" />
+                        <Image src={Arrow} style={{ backgroundBlendMode: "multiply" }} id="arrow" />
                         <Image src={Location} style={{ backgroundBlendMode: "multiply" }} id="location" />
                         <div id="body" ></div>
                         <div id="head" ></div>
@@ -54,11 +54,11 @@ class Landing extends React.Component {
                         <Image src={GreenBar} style={{ backgroundBlendMode: "multiply" }} id="greenbar" />
                         <Image src={YellowBar} style={{ backgroundBlendMode: "multiply" }} id="yellowbar" />
                         <Image src={OrangeArrow} style={{ backgroundBlendMode: "multiply" }} id="orangearrow" />
-                        <Image src={PinkArrow} style={{ backgroundBlendMode: "multiply" }} id="pinkarrow" /> */}
-                    </header>
+                        <Image src={PinkArrow} style={{ backgroundBlendMode: "multiply" }} id="pinkarrow" />
+                    </header> */}
                     <header className="masthead">
                         <div className="container h-100">
-                            <div className="row align-items-center" style={{ marginTop: '20px' }}>
+                            <div className="row align-items-center" style={{ marginTop: '20px', backgroundColor: "blue" }}>
                                 <div className="col-4 text-right header">
                                     July 19, 2020<br/><br/><br/>
                                 </div>
@@ -77,15 +77,15 @@ class Landing extends React.Component {
                                 </div>
                             </div>
                             <div className="row align-items-center" style={{ marginTop: '20px' }}>
-                                <div className="col-2 text-left header">
-                                    <Link to="/About">About</Link><br/>
+                                <div className="col-2 text-left header" style={{ zIndex: "10000", position: "fixed" }}>
+                                    <Link to="/About" style={{ zIndex: "10000", position: "fixed" }}>About</Link><br/>
                                     <Link to="/WorkExperience">Work Experience</Link>
                                 </div>
                             </div>
                         </div>
                     </header>
                 </div>
-                <div className="page first-page">
+                <div className="page first-page" style={{ backgroundColor: "yellow" }}>
                     <div>Info</div>
                 </div>
                 <div className="page second-page">
