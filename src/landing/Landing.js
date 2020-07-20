@@ -76,9 +76,13 @@ class Landing extends React.Component {
                         </div>
                     </header>
                 </div>
-                <header className="masthead">
-                        <Image src={PinkArrow} style={{ top: "60px", height: "100vh", width: "auto", position: "fixed", zIndex: "-9" }} className="background" />
-                        <Image src={OrangeArrow} style={{ top: "30px", height: "auto", width: "40vw", position: "fixed", zIndex: "-9" }} className="background" />
+                <header className="container">
+                        <div className="row">
+                            <div className="col-6 offset-4"> 
+                                <Image src={PinkArrow} style={{ top: "300px", marginLeft: "50px", height: "40vh", width: "auto", position: "absolute", zIndex: "-7" }} className="background" />
+                                <Image src={OrangeArrow} style={{ top: "350px", height: "40vh", width: "auto", position: "absolute", zIndex: "-8" }} className="background" />
+                            </div>
+                        </div>
                     </header>
                 <div className="page first-page">
                     <div style={{ fontSize: "60pt", WebkitTextStroke: "6px", textAlign: "center", marginTop: "200px" }}>
