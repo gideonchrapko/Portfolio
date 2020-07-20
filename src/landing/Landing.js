@@ -36,11 +36,11 @@ class Landing extends React.Component {
             <div id="container" ref={this.container}>
                 <div className="containerFluid h-100">
                     <header className="masthead">
-                        <Image src={BOne} style={{ left: "10px", top: "60px", height: "100vh", width: "auto", position: "fixed", zIndex: "-9" }} className="background" />
+                        <Image src={BOne} style={{ left: "30px", top: "60px", height: "100vh", width: "auto", position: "fixed", zIndex: "-9" }} className="background" />
                         <Image src={BTwo} style={{ top: "30px", right: "5px", height: "20vh", width: "auto", position: "fixed", zIndex: "-9" }} className="background" />
-                        <Image src={BThree} style={{ right: "10px", top: "-80px", height: "100vh", width: "auto", position: "fixed", zIndex: "-9" }} className="background" />
+                        <Image src={BThree} style={{ right: "40px", top: "-80px", height: "100vh", width: "auto", position: "fixed", zIndex: "-9" }} className="background" />
                     </header>
-                    <header className="masthead" style={{ position: "fixed", width: "100vw" }}>
+                    <header className="masthead" style={{ position: "fixed", width: "100vw", zIndex: "9" }}>
                         <div className="container h-100">
                             <div className="row frame" style={{ marginTop: '20px' }}>
                                 <div className="col-4 text-right">
