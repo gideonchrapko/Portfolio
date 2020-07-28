@@ -2,15 +2,17 @@ import React from "react";
 import { Link } from 'react-router-dom'
 import ScrollSnap from 'scroll-snap'
 import { Row, Container, Col, Image } from 'react-bootstrap';
+import sectionFour from "./SectionFour"
 
-import BOne from "./skins/bOne.png"
-import BTwo from "./skins/bTwo.png"
-import BThree from "./skins/bThree.png"
+import BOne from "./skins/bgOne.svg"
+import BTwo from "./skins/bgTwo.svg"
+import BThree from "./skins/bgThree.svg"
 import PinkArrow from "./skins/pinkarrow.png"
 import OrangeArrow from "./skins/orangearrow.png"
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../styles/styles.scss"
+import SectionFour from "./SectionFour";
 
 function callback() {
     console.log('snapped')
@@ -37,12 +39,20 @@ class Landing extends React.Component {
     return (
         <div>
             <div id="container" ref={this.container}>
+            <header className="container">
+                        <div className="row">
+                            <div className="col-lg-8 col-12 offset-1 offset-lg-0 offset-md-0 offset-sm-0 position-fixed background"> 
+                                <Image src={BOne} style={{ marginLeft: "-50px" }} />
+                            </div>
+                            <div className="col-lg-6 offset-lg-5 col-md-10 offset-md-1 col-8 offset-4 position-fixed background"> 
+                                <Image src={BTwo} style={{ right: "0px" }} />
+                            </div>
+                            <div className="col-lg-1 offset-10 col-2 offset-9 position-fixed background"> 
+                                <Image src={BThree} style={{ left: "0px", marginTop: "-100px" }} />
+                            </div>
+                        </div>
+                </header>
                 <div className="containerFluid h-100">
-                    <header className="masthead">
-                        <Image src={BOne} style={{ left: "20px", top: "60px", height: "100vh", width: "auto", position: "fixed", zIndex: "-9" }} className="background" />
-                        <Image src={BTwo} style={{ top: "30px", right: "45px", height: "auto", width: "40vw", position: "fixed", zIndex: "-9" }} className="background" />
-                        <Image src={BThree} style={{ right: "20px", top: "-80px", height: "100vh", width: "auto", position: "fixed", zIndex: "-9" }} className="background" />
-                    </header>
                     <header className="masthead" style={{ position: "fixed", width: "100%", zIndex: "9" }}>
                         <div className="container h-100">
                             <div className="row frame" style={{ marginTop: "20px" }}>
@@ -78,12 +88,12 @@ class Landing extends React.Component {
                 </div>
                 <header className="container">
                         <div className="row">
-                            <div className="col-6 offset-4"> 
-                                <Image src={PinkArrow} style={{ top: "300px", marginLeft: "50px", height: "40vh", width: "auto", position: "absolute", zIndex: "-7" }} className="background" />
-                                <Image src={OrangeArrow} style={{ top: "350px", height: "40vh", width: "auto", position: "absolute", zIndex: "-8" }} className="background" />
+                            <div className="col-4 offset-4"> 
+                                <Image src={PinkArrow} style={{ top: "300px", marginLeft: "100px", position: "absolute", zIndex: "-7" }} className="background" />
+                                <Image src={OrangeArrow} style={{ top: "350px", position: "absolute", zIndex: "-8" }} className="background" />
                             </div>
                         </div>
-                    </header>
+                </header>
                 <div className="page first-page">
                     <div style={{ fontSize: "60pt", WebkitTextStroke: "6px", textAlign: "center", marginTop: "200px" }}>
                             Gideon Chrapko
@@ -97,6 +107,7 @@ class Landing extends React.Component {
                         </div>
                     </div>
                 </div>
+                <SectionFour />
                 <div className="page second-page">
                     <div>ProjectOne</div>
                 </div>

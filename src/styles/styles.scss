@@ -71,9 +71,10 @@ body {
   }
 
   .background {
-    width: 100%;
+    // width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     mix-blend-mode: multiply;
+    top: 10px;
   }
