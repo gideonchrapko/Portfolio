@@ -41,10 +41,10 @@ class Landing extends React.Component {
             <div id="container" ref={this.container}>
                 <Container>
                     <Row>
-                        <div className="col-lg-8 col-12 offset-1 offset-lg-0 offset-md-0 offset-sm-0 position-fixed background"> 
-                             <Image src={BOne} style={{ marginLeft: "-50px" }} />
-                        </div>
-                        <div className="col-lg-6 offset-lg-5 col-md-10 offset-md-1 col-8 offset-4 position-fixed background"> 
+                        <Col lg={{ span: 8, offset: 0 }} md={{ span: 8, offset: 0 }} xs={{ span: 12, offset: 1 }} className="position-fixed background"> 
+                              <Image src={BOne} style={{ marginLeft: "-50px" }} />
+                         </Col>
+                         <div className="col-lg-6 offset-lg-5 col-md-10 offset-md-1 col-8 offset-4 position-fixed background"> 
                             <Image src={BTwo} style={{ right: "0px" }} />
                         </div>
                         <div className="col-lg-1 offset-10 col-2 offset-9 position-fixed background"> 
