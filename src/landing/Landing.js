@@ -39,19 +39,19 @@ class Landing extends React.Component {
     return (
         <div>
             <div id="container" ref={this.container}>
-            <header className="container">
-                        <div className="row">
-                            <div className="col-lg-8 col-12 offset-1 offset-lg-0 offset-md-0 offset-sm-0 position-fixed background"> 
-                                <Image src={BOne} style={{ marginLeft: "-50px" }} />
-                            </div>
-                            <div className="col-lg-6 offset-lg-5 col-md-10 offset-md-1 col-8 offset-4 position-fixed background"> 
-                                <Image src={BTwo} style={{ right: "0px" }} />
-                            </div>
-                            <div className="col-lg-1 offset-10 col-2 offset-9 position-fixed background"> 
-                                <Image src={BThree} style={{ left: "0px", marginTop: "-100px" }} />
-                            </div>
+                <Container>
+                    <Row>
+                        <div className="col-lg-8 col-12 offset-1 offset-lg-0 offset-md-0 offset-sm-0 position-fixed background"> 
+                             <Image src={BOne} style={{ marginLeft: "-50px" }} />
                         </div>
-                </header>
+                        <div className="col-lg-6 offset-lg-5 col-md-10 offset-md-1 col-8 offset-4 position-fixed background"> 
+                            <Image src={BTwo} style={{ right: "0px" }} />
+                        </div>
+                        <div className="col-lg-1 offset-10 col-2 offset-9 position-fixed background"> 
+                            <Image src={BThree} style={{ left: "0px", marginTop: "-100px" }} />
+                        </div>
+                    </Row>
+                </Container>
                 <div className="containerFluid h-100">
                     <header className="masthead" style={{ position: "fixed", width: "100%", zIndex: "9" }}>
                         <div className="container h-100">
@@ -86,14 +86,14 @@ class Landing extends React.Component {
                         </div>
                     </header>
                 </div>
-                <header className="container">
-                        <div className="row">
-                            <div className="col-4 offset-4"> 
-                                <Image src={PinkArrow} style={{ top: "300px", marginLeft: "100px", position: "absolute", zIndex: "-7" }} className="background" />
-                                <Image src={OrangeArrow} style={{ top: "350px", position: "absolute", zIndex: "-8" }} className="background" />
-                            </div>
-                        </div>
-                </header>
+                <Container>
+                    <Row >
+                        <Col lg={{ span: 5, offset: 3 }} xs={{ span: 7, offset: 1 }} >
+                            <Image src={PinkArrow} style={{ top: "300px", marginLeft: "100px", width: "100%", position: "absolute", zIndex: "-7" }} className="background" />
+                            <Image src={OrangeArrow} style={{ top: "350px", position: "absolute", width: "100%", zIndex: "-8" }} className="background" />
+                        </Col>
+                    </Row>
+                </Container>
                 <div className="page first-page">
                     <div style={{ fontSize: "60pt", WebkitTextStroke: "6px", textAlign: "center", marginTop: "200px" }}>
                             Gideon Chrapko
