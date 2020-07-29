@@ -2,17 +2,20 @@ import React from "react";
 import { Link } from 'react-router-dom'
 import ScrollSnap from 'scroll-snap'
 import { Row, Container, Col, Image } from 'react-bootstrap';
-import sectionFour from "./SectionFour"
+import SectionOne from "./SectionOne"
+import SectionTwo from "./SectionTwo"
+import SectionThree from "./SectionThree"
+import SectionFour from "./SectionFour"
 
 import BOne from "./skins/bgOne.svg"
 import BTwo from "./skins/bgTwo.svg"
 import BThree from "./skins/bgThree.svg"
+import BFour from "./skins/bgFour.svg"
 import PinkArrow from "./skins/pinkarrow.png"
 import OrangeArrow from "./skins/orangearrow.png"
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../styles/styles.scss"
-import SectionFour from "./SectionFour";
 
 function callback() {
     console.log('snapped')
@@ -41,33 +44,36 @@ class Landing extends React.Component {
             <div id="container" ref={this.container}>
                 <Container>
                     <Row>
-                        <Col lg={{ span: 8, offset: 0 }} md={{ span: 8, offset: 0 }} xs={{ span: 12, offset: 1 }} className="position-fixed background"> 
+                        <Col lg={{ span: 2, offset: 0 }} md={{ span: 3, offset: 0 }} xs={{ span: 4, offset: 1 }} className="position-fixed background"> 
                               <Image src={BOne} style={{ marginLeft: "-50px" }} />
                          </Col>
-                         <div className="col-lg-6 offset-lg-5 col-md-10 offset-md-1 col-8 offset-4 position-fixed background"> 
-                            <Image src={BTwo} style={{ right: "0px" }} />
-                        </div>
-                        <div className="col-lg-1 offset-10 col-2 offset-9 position-fixed background"> 
-                            <Image src={BThree} style={{ left: "0px", marginTop: "-100px" }} />
-                        </div>
+                         <Col lg={{ span: 6, offset: 5}} md={{ span: 6, offset: 5 }} xs={{ span: 7, offset: 5 }} className="position-fixed background"> 
+                            <Image src={BTwo} style={{ right: "0px", marginTop: "50px" }} />
+                        </Col>
+                        <Col lg={{ span: 2, offset: 9 }} xs={{ span: 4, offset: 8 }} className="position-fixed background"> 
+                            <Image src={BThree} style={{ right: "0px", marginTop: "100px" }} />
+                        </Col>
+                        <Col lg={{ span: 2, offset: 0 }} md={{ span: 3, offset: 0 }} xs={{ span: 4, offset: 1}} className="position-fixed background"> 
+                            <Image src={BFour} style={{ marginLeft: "-50px", marginTop: "10px" }} />
+                        </Col>
                     </Row>
                 </Container>
                 <div className="containerFluid h-100">
                     <header className="masthead" style={{ position: "fixed", width: "100%", zIndex: "9" }}>
                         <div className="container h-100">
-                            <div className="row frame" style={{ marginTop: "20px" }}>
+                            <div className="row frame" style={{ marginTop: "20px", WebkitTextStroke: "1px" }}>
                                 <div className="col-4 text-left">
-                                    July 19, 2020<br/><br/><br/>
+                                    July 19, 2020<br/>
                                 </div>
-                                <div className="col-4 text-right">
+                                <div className="col-4 text-right" style={{ borderRight: "2px solid black" }}>
                                     Location<br/>
-                                    Vancouver, BC, Canada<br/><br/>
+                                    Vancouver, BC, Canada<br/>
                                 </div>
-                                <div className="col-2 text-right">
+                                <div className="col-2 text-right" style={{ borderRight: "2px solid black" }}>
                                     Contact<br/>
                                     Email<br/><br/>
                                 </div>
-                                <div className="col-2 text-right">
+                                <div className="col-2 text-right" >
                                     Social <br/>
                                     Behance <br/>
                                     Linkedin
@@ -86,6 +92,13 @@ class Landing extends React.Component {
                         </div>
                     </header>
                 </div>
+                {/* <Container>
+                    <Row>
+                        <Col className="frame">
+
+                        </Col>
+                    </Row>
+                </Container> */}
                 <Container>
                     <Row >
                         <Col lg={{ span: 5, offset: 3 }} xs={{ span: 7, offset: 1 }} >
@@ -107,20 +120,11 @@ class Landing extends React.Component {
                         </div>
                     </div>
                 </div>
-                <SectionFour />
-                <div className="page second-page">
-                    <div>ProjectOne</div>
-                </div>
-                <div className="page third-page">
-                    <div>ProjectTwo</div>
-                </div>
-                <div className="page fourth-page">
-                    <div>ProjectThree</div>
-                </div>
-                <div className="page fifth-page">
-                    <div>ProjectFour</div>
-                    <div className="hint">scroll up</div>
-                </div>
+                <SectionOne />
+                <SectionTwo />
+                <SectionThree />
+                <SectionFour>
+                </SectionFour>
             </div>
         </div>
     );

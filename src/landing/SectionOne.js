@@ -4,7 +4,7 @@ class SectionOne extends Component {
     state = {}
     render() { 
         return (
-                <section className="SectionOne">
+                <section className="page second-page">
                     Section One
                 </section>
         )
