@@ -11,8 +11,7 @@ import BOne from "./skins/bgOne.svg"
 import BTwo from "./skins/bgTwo.svg"
 import BThree from "./skins/bgThree.svg"
 import BFour from "./skins/bgFour.svg"
-import PinkArrow from "./skins/pinkarrow.png"
-import OrangeArrow from "./skins/orangearrow.png"
+import Enter from "./skins/enter.svg"
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../styles/styles.scss"
@@ -44,24 +43,30 @@ class Landing extends React.Component {
             <div id="container" ref={this.container}>
                 <Container>
                     <Row>
-                        <Col lg={{ span: 2, offset: 0 }} md={{ span: 3, offset: 0 }} xs={{ span: 4, offset: 1 }} className="position-fixed background"> 
-                              <Image src={BOne} style={{ marginLeft: "-50px" }} />
+                        <Col lg={{ span: 4, offset: 0 }} className="position-fixed background"> 
+                              <Image src={BOne} style={{ marginTop: "60px"}} />
                          </Col>
-                         <Col lg={{ span: 6, offset: 5}} md={{ span: 6, offset: 5 }} xs={{ span: 7, offset: 5 }} className="position-fixed background"> 
-                            <Image src={BTwo} style={{ right: "0px", marginTop: "50px" }} />
+                         <Col lg={{ span: 6, offset: 5}} className="position-fixed background"> 
+                            <Image src={BTwo} style={{ right: "0px", marginTop: "-5px" }} />
                         </Col>
-                        <Col lg={{ span: 2, offset: 9 }} xs={{ span: 4, offset: 8 }} className="position-fixed background"> 
-                            <Image src={BThree} style={{ right: "0px", marginTop: "100px" }} />
+                        <Col lg={{ span: 3 }} className="position-fixed background" style={{  marginTop: "15px" }}> 
+                            <Image src={BThree} />
                         </Col>
-                        <Col lg={{ span: 2, offset: 0 }} md={{ span: 3, offset: 0 }} xs={{ span: 4, offset: 1}} className="position-fixed background"> 
-                            <Image src={BFour} style={{ marginLeft: "-50px", marginTop: "10px" }} />
+                        <Col lg={{ span: 3, offset: 3 }} className="position-fixed background" style={{ left: "18px", marginTop: "15px" }}> 
+                            <Image src={BThree} />
+                        </Col>
+                        <Col lg={{ span: 3, offset: 6 }} className="position-fixed background" style={{ left: "-15px", marginTop: "15px" }}> 
+                            <Image src={BThree} />
+                        </Col>
+                        <Col lg={{ span: 3, offset: 9 }} className="position-fixed background" style={{ left: "-45px", marginTop: "15px" }}> 
+                            <Image src={BThree} />
                         </Col>
                     </Row>
                 </Container>
-                <div className="containerFluid h-100">
+                <div className="containerFluid">
                     <header className="masthead" style={{ position: "fixed", width: "100%", zIndex: "9" }}>
-                        <div className="container h-100">
-                            <div className="row frame" style={{ marginTop: "20px", WebkitTextStroke: "1px" }}>
+                        <div className="container">
+                            <div className="row frame" style={{ marginTop: "20px", WebkitTextStroke: "2px" }}>
                                 <div className="col-4 text-left">
                                     July 19, 2020<br/>
                                 </div>
@@ -79,52 +84,18 @@ class Landing extends React.Component {
                                     Linkedin
                                 </div>
                             </div>
-                            <div className="row align-items-center" style={{ marginTop: '20px' }}>
-                                <div className="col-lg-2 col-md-2 col-4 text-left frame">
-                                    <Link to="/About" style={{ color: "black", textDecoration: "none" }}>
-                                        About
-                                    </Link><br/>
-                                    <Link to="/WorkExperience" style={{ color: "black", textDecoration: "none" }}>
-                                        Work Experience
-                                    </Link><br/><br/>
-                                </div>
-                            </div>
                         </div>
                     </header>
                 </div>
-                {/* <Container>
+                <Container className="page first-page">
                     <Row>
-                        <Col className="frame">
-
-                        </Col>
-                    </Row>
-                </Container> */}
-                <Container>
-                    <Row >
-                        <Col lg={{ span: 5, offset: 3 }} xs={{ span: 7, offset: 1 }} >
-                            <Image src={PinkArrow} style={{ top: "300px", marginLeft: "100px", width: "100%", position: "absolute", zIndex: "-7" }} className="background" />
-                            <Image src={OrangeArrow} style={{ top: "350px", position: "absolute", width: "100%", zIndex: "-8" }} className="background" />
+                        <Col lg={{ span: 5 }}>
+                            <div style={{ fontSize: "37pt", WebkitTextStroke: "3px", textAlign: "Left" }}>
+                                Hello, my name is Gideon Chrapko. I am a UX Designer and Front End Developer. 
+                            </div>
                         </Col>
                     </Row>
                 </Container>
-                <div className="page first-page">
-                    <div style={{ fontSize: "60pt", WebkitTextStroke: "6px", textAlign: "center", marginTop: "200px" }}>
-                            Gideon Chrapko
-                        <br/>
-                        <div style={{ fontSize: "20pt", WebkitTextStroke: "3px", marginTop: "-20px" }}>
-                            UI/UX Design Portfolio
-                        </div>
-                        <br/>
-                        <div style={{ fontSize: "10pt", WebkitTextStroke: "0px", marginTop: "-100px" }}>
-                            Scroll
-                        </div>
-                    </div>
-                </div>
-                <SectionOne />
-                <SectionTwo />
-                <SectionThree />
-                <SectionFour>
-                </SectionFour>
             </div>
         </div>
     );
