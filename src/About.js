@@ -3,9 +3,8 @@ import { Link } from 'react-router-dom'
 
 const About = () => {
     return (
-        <div>
-            <Link to="/">Back</Link>
-            About
+        <div style={{ fontSize: "100vw"}}>
+            fuck
         </div>
     )
 }

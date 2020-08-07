@@ -1,0 +1,378 @@
+{
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5123,
+            "count" : 7329,
+            "max" : [
+                1763
+            ],
+            "min" : [
+                0
+            ],
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 1764,
+            "max" : [
+                36.68867874145508,
+                6.6599202156066895,
+                26.13538932800293
+            ],
+            "min" : [
+                -36.68867874145508,
+                -2.761837959289551,
+                -26.13538932800293
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 1764,
+            "max" : [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min" : [
+                -1.0,
+                -1.0,
+                -0.99993896484375
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5126,
+            "count" : 1764,
+            "max" : [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min" : [
+                -1.0,
+                -1.0,
+                -0.9999992847442627,
+                1.0
+            ],
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 1764,
+            "max" : [
+                0.9460020065307617,
+                0.9972779999952763
+            ],
+            "min" : [
+                0.0025820001028478146,
+                0.002722024917602539
+            ],
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 3,
+            "max" : [
+                15.791666666666668
+            ],
+            "min" : [
+                5.875
+            ],
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 9,
+            "max" : [
+                4.79248571395874,
+                6.6340107917785645,
+                13.659682273864746
+            ],
+            "min" : [
+                -12.328550338745117,
+                0.0,
+                -0.0
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 7,
+            "componentType" : 5126,
+            "count" : 380,
+            "max" : [
+                15.791666666666668
+            ],
+            "min" : [
+                0.0
+            ],
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 8,
+            "componentType" : 5126,
+            "count" : 380,
+            "max" : [
+                0.6429737210273743,
+                0.21542178094387054,
+                0.18964804708957672,
+                0.7771143913269043
+            ],
+            "min" : [
+                0.5959750413894653,
+                -0.22210846841335297,
+                -0.1755666732788086,
+                0.7273653745651245
+            ],
+            "type" : "VEC4"
+        }
+    ],
+    "animations" : [
+        {
+            "channels" : [
+                {
+                    "sampler" : 0,
+                    "target" : {
+                        "node" : 0,
+                        "path" : "translation"
+                    }
+                },
+                {
+                    "sampler" : 1,
+                    "target" : {
+                        "node" : 0,
+                        "path" : "rotation"
+                    }
+                }
+            ],
+            "name" : "CameraAction.003",
+            "samplers" : [
+                {
+                    "input" : 5,
+                    "interpolation" : "CUBICSPLINE",
+                    "output" : 6
+                },
+                {
+                    "input" : 7,
+                    "interpolation" : "LINEAR",
+                    "output" : 8
+                }
+            ]
+        }
+    ],
+    "asset" : {
+        "generator" : "Khronos Blender glTF 2.0 exporter",
+        "version" : "2.0"
+    },
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 14658,
+            "byteOffset" : 0,
+            "target" : 34963
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 21168,
+            "byteOffset" : 14660,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 21168,
+            "byteOffset" : 35828,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 28224,
+            "byteOffset" : 56996,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 14112,
+            "byteOffset" : 85220,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 12,
+            "byteOffset" : 99332
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 108,
+            "byteOffset" : 99344
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1520,
+            "byteOffset" : 99452
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 6080,
+            "byteOffset" : 100972
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 107052,
+            "uri" : "Sign.bin"
+        }
+    ],
+    "images" : [
+        {
+            "name" : "COLOUR-min",
+            "uri" : "COLOUR-min.png"
+        },
+        {
+            "name" : "Glow",
+            "uri" : "Glow.png"
+        },
+        {
+            "name" : "NRM normal-min",
+            "uri" : "NRM normal-min.png"
+        },
+        {
+            "name" : "NRM-min",
+            "uri" : "NRM-min.png"
+        }
+    ],
+    "materials" : [
+        {
+            "emissiveFactor" : [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "emissiveTexture" : {
+                "index" : 1
+            },
+            "name" : "lambert3SG",
+            "normalTexture" : {
+                "index" : 2,
+                "scale" : 5.399999618530273
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 0
+                },
+                "metallicFactor" : 0.04522614926099777
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "opensign_turbo.001",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "NORMAL" : 2,
+                        "POSITION" : 1,
+                        "TANGENT" : 3,
+                        "TEXCOORD_0" : 4
+                    },
+                    "indices" : 0,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "name" : "Camera",
+            "rotation" : [
+                0.5959750413894653,
+                0.19763118028640747,
+                -0.1543833464384079,
+                0.7628377676010132
+            ],
+            "translation" : [
+                4.79248571395874,
+                6.6340107917785645,
+                13.659682273864746
+            ]
+        },
+        {
+            "name" : "Lamp",
+            "rotation" : [
+                0.16907575726509094,
+                0.7558802962303162,
+                -0.27217137813568115,
+                0.570947527885437
+            ],
+            "scale" : [
+                1.0,
+                1.0,
+                0.9999999403953552
+            ],
+            "translation" : [
+                -8.986095428466797,
+                9.245885848999023,
+                4.068114280700684
+            ]
+        },
+        {
+            "mesh" : 0,
+            "name" : "opensign_turbo.001",
+            "rotation" : [
+                0.7071068286895752,
+                0.0,
+                -0.0,
+                0.7071067094802856
+            ],
+            "scale" : [
+                0.09965792298316956,
+                0.09965792298316956,
+                0.09965792298316956
+            ],
+            "translation" : [
+                -1.0716471672058105,
+                0.6526933312416077,
+                -1.9480924606323242
+            ]
+        }
+    ],
+    "samplers" : [
+        {}
+    ],
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                2,
+                1,
+                0
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        },
+        {
+            "sampler" : 0,
+            "source" : 1
+        },
+        {
+            "sampler" : 0,
+            "source" : 2
+        },
+        {
+            "sampler" : 0,
+            "source" : 3
+        }
+    ]
+}
