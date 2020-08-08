@@ -62,12 +62,12 @@ class App extends React.Component{
                                                     </Col>
                                                     <Col className="col-2 text-right" style={{ borderRight: "2px solid black" }}>
                                                         Contact<br/>
-                                                        <a href="http://www.example.com/theme.css">Email</a>
+                                                        <a href="mailto: gideonchrapko@gmail.com">Email</a>
                                                     </Col>
                                                     <Col className="col-2 text-right" >
                                                         Social <br/>
-                                                        <a href="http://www.example.com/theme.css">Behance</a><br/>
-                                                        <a href="http://www.example.com/theme.css">Linkedin</a>
+                                                        <a href="https://www.behance.net/gideonchrapko">Behance</a><br/>
+                                                        <a href="https://www.linkedin.com/in/gideon-chrapko-230220a0/">Linkedin</a>
                                                     </Col>
                                                 </Row>
                                                 <Row style={{ WebkitTextStroke: "2px", textAlign: "center" }} className="nav" >

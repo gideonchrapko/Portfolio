@@ -65,7 +65,7 @@ container = React.createRef()
                                 <Col className="col-2 text-left" style={{ fontSize: "1.2vw", paddingTop: "80px" }}>  
                                     001
                                 </Col>
-                                <Col className="col-7 text-left" style={{ fontSize: "7vw", fontWeight:"600", WebkitTextStroke: "7px" }}>  
+                                <Col className="col-7 text-left" style={{ fontSize: "7vw", fontWeight:"600", WebkitTextStroke: "5px" }}>  
                                     <Link to="/view/portfolio/juice">The Juice App</Link>
                                 </Col>
                                 {/* <Col>
@@ -90,7 +90,7 @@ container = React.createRef()
                                 <Col className="col-2 text-left" style={{ fontSize: "1.2vw", paddingTop: "80px" }}>  
                                     002
                                 </Col>
-                                <Col className="col-7 text-left" style={{ fontSize: "7vw", fontWeight:"600", WebkitTextStroke: "7px" }}>  
+                                <Col className="col-7 text-left" style={{ fontSize: "7vw", fontWeight:"600", WebkitTextStroke: "5px" }}>  
                                     <Link to="/view/portfolio/westcoastcustoms">WestCoastCustoms</Link>
                                 </Col>
                             </Row>
@@ -111,7 +111,7 @@ container = React.createRef()
                                 <Col className="col-2 text-left" style={{ fontSize: "1.2vw", paddingTop: "80px" }}>  
                                     003
                                 </Col>
-                                <Col className="col-7 text-left" style={{ fontSize: "7vw", fontWeight:"600", WebkitTextStroke: "7px" }}>  
+                                <Col className="col-7 text-left" style={{ fontSize: "7vw", fontWeight:"600", WebkitTextStroke: "5px" }}>  
                                     <Link to="/view/portfolio/hypremium">Hypremium</Link>
                                 </Col>
                             </Row>
@@ -132,7 +132,7 @@ container = React.createRef()
                                 <Col className="col-2 text-left" style={{ fontSize: "1.2vw", paddingTop: "80px" }}>  
                                     004
                                 </Col>
-                                <Col className="col-7 text-left" style={{ fontSize: "7vw", fontWeight:"600", WebkitTextStroke: "7px" }}>  
+                                <Col className="col-7 text-left" style={{ fontSize: "7vw", fontWeight:"600", WebkitTextStroke: "5px" }}>  
                                     <Link to="//view/portfolio/juice">The Juice App</Link>
                                 </Col>
                             </Row>
@@ -147,7 +147,7 @@ container = React.createRef()
                                     <a href="www.youtube.com">View on the App Store</a> 
                                 </Col>
                             </Row>
-                            <div style={{ height: "150px" }}>
+                            <div style={{ height: "200px" }}>
 
                             </div>
                         </div>
