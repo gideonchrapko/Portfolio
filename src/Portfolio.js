@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollSnap from 'scroll-snap'
 
 import { Link } from 'react-router-dom';
 import { Row, Container, Col, Image } from 'react-bootstrap';
@@ -7,7 +8,30 @@ import Arrow from "./landing/skins/arrowSmall.svg"
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const Portfolio = () => {
+
+function callback() {
+    console.log('snapped')
+  }
+
+
+class Portfolio extends React.Component {
+
+container = React.createRef()
+
+  bindScrollSnap() {
+    const element = this.container.current
+    const snapElement = new ScrollSnap(element, {
+      snapDestinationY: '65%',
+    })
+
+    snapElement.bind(callback)
+  }
+
+  componentDidMount() {
+    this.bindScrollSnap()
+  }
+
+    render () {
     return (
         <div >
             <div 
@@ -34,96 +58,104 @@ const Portfolio = () => {
                 </Row>
             </Container>
             <Container>
-                <Row  className="FixedHeightContainer" style={{ paddingBottom: "100px" }}>
-                    <Col className="Content">
-                        <Row style={{ marginTop: "100px" }}>
-                            <Col className="col-3 text-left" style={{ fontSize: "2vw", paddingTop: "60px" }}>  
-                                001
-                            </Col>
-                            <Col className="col-6 text-left" style={{ fontSize: "6vw", fontWeight:"600", WebkitTextStroke: "4px" }}>  
-                                <Link to="/view/portfolio/juice">The Juice App</Link>
-                            </Col>
-                            {/* <Col>
-                                <Image src={Arrow} className="position-relative background" style={{ position: "relative", zIndex: "-9999999", mixBlendMode: "multiply" }} />
-                            </Col> */}
-                        </Row>
-                        <Row>
-                            <Col className="col-3 text-left" style={{ fontSize: "2vw", fontWeight:"600" }}>
-                                2020
-                            </Col>
-                            <Col className="col-6 text-left" style={{ fontSize: "2vw" }}>
-                                UX/UI Design and Development 
-                            </Col>
-                            <Col className="col-3 text-right" style={{ fontSize: "1.5vw", paddingTop: "5px" }}>
-                                <a href="www.youtube.com">View on the App Store</a> 
-                                
-                            </Col>
-                        </Row>
-                        <Row style={{ marginTop: "100px" }}>
-                            <Col className="col-3 text-left" style={{ fontSize: "2vw", paddingTop: "60px" }}>  
-                                002
-                            </Col>
-                            <Col className="col-6 text-left" style={{ fontSize: "6vw", fontWeight:"600", WebkitTextStroke: "4px" }}>  
-                                <Link to="/view/portfolio/westcoastcustoms">WestCoastCustoms</Link>
-                            </Col>
-                        </Row>
-                        <Row>
-                            <Col className="col-3 text-left" style={{ fontSize: "2vw", fontWeight:"600" }}>
-                                2020
-                            </Col>
-                            <Col className="col-6 text-left" style={{ fontSize: "2vw" }}>
-                                UX/UI Design and Development 
-                            </Col>
-                            <Col className="col-3 text-right" style={{ fontSize: "1.5vw", paddingTop: "5px" }}>
-                                <a href="www.youtube.com">View on the App Store</a> 
-                            </Col>
-                        </Row>
-                        <Row style={{ marginTop: "100px" }}>
-                            <Col className="col-3 text-left" style={{ fontSize: "2vw", paddingTop: "60px" }}>  
-                                003
-                            </Col>
-                            <Col className="col-6 text-left" style={{ fontSize: "6vw", fontWeight:"600", WebkitTextStroke: "4px" }}>  
-                                <Link to="/view/portfolio/hypremium">Hypremium</Link>
-                            </Col>
-                        </Row>
-                        <Row>
-                            <Col className="col-3 text-left" style={{ fontSize: "2vw", fontWeight:"600" }}>
-                                2020
-                            </Col>
-                            <Col className="col-6 text-left" style={{ fontSize: "2vw" }}>
-                                UX/UI Design and Development 
-                            </Col>
-                            <Col className="col-3 text-right" style={{ fontSize: "1.5vw", paddingTop: "5px" }}>
-                                <a href="www.youtube.com">View on the App Store</a> 
-                            </Col>
-                        </Row>
-                        <Row style={{ marginTop: "100px" }}>
-                            <Col className="col-3 text-left" style={{ fontSize: "2vw", paddingTop: "60px" }}>  
-                                004
-                            </Col>
-                            <Col className="col-6 text-left" style={{ fontSize: "6vw", fontWeight:"600", WebkitTextStroke: "4px" }}>  
-                                <Link to="//view/portfolio/juice">The Juice App</Link>
-                            </Col>
-                        </Row>
-                        <Row>
-                            <Col className="col-3 text-left" style={{ fontSize: "2vw", fontWeight:"600" }}>
-                                2020
-                            </Col>
-                            <Col className="col-6 text-left" style={{ fontSize: "2vw" }}>
-                                UX/UI Design and Development 
-                            </Col>
-                            <Col className="col-3 text-right" style={{ fontSize: "1.5vw", paddingTop: "5px" }}>
-                                <a href="www.youtube.com">View on the App Store</a> 
-                            </Col>
-                            <div style={{ height: "200px" }}>
+                <Row  className="FixedHeightContainer">
+                    <Col className="Content" id="container" ref={this.container}>
+                        <div style={{ marginTop: "150px" }}>
+                            <Row>
+                                <Col className="col-2 text-left" style={{ fontSize: "1.2vw", paddingTop: "80px" }}>  
+                                    001
+                                </Col>
+                                <Col className="col-7 text-left" style={{ fontSize: "7vw", fontWeight:"600", WebkitTextStroke: "7px" }}>  
+                                    <Link to="/view/portfolio/juice">The Juice App</Link>
+                                </Col>
+                                {/* <Col>
+                                    <Image src={Arrow} className="position-relative background" style={{ position: "relative", zIndex: "-9999999", mixBlendMode: "multiply" }} />
+                                </Col> */}
+                            </Row>
+                            <Row>
+                                <Col className="col-2 text-left" style={{ fontSize: "1.2vw", fontWeight:"600" }}>
+                                    2020
+                                </Col>
+                                <Col className="col-7 text-left" style={{ fontSize: "1.2vw" }}>
+                                    UX/UI Design and Development 
+                                </Col>
+                                <Col className="col-3 text-right" style={{ fontSize: "1.2vw", paddingTop: "5px" }}>
+                                    <a href="www.youtube.com">View on the App Store</a> 
+                                    
+                                </Col>
+                            </Row>
+                        </div>
+                        <div style={{ marginTop: "150px" }}>
+                            <Row>
+                                <Col className="col-2 text-left" style={{ fontSize: "1.2vw", paddingTop: "80px" }}>  
+                                    002
+                                </Col>
+                                <Col className="col-7 text-left" style={{ fontSize: "7vw", fontWeight:"600", WebkitTextStroke: "7px" }}>  
+                                    <Link to="/view/portfolio/westcoastcustoms">WestCoastCustoms</Link>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col className="col-2 text-left" style={{ fontSize: "1.2vw", fontWeight:"600" }}>
+                                    2020
+                                </Col>
+                                <Col className="col-7 text-left" style={{ fontSize: "1.2vw" }}>
+                                    UX/UI Design and Development 
+                                </Col>
+                                <Col className="col-3 text-right" style={{ fontSize: "1.2vw", paddingTop: "5px" }}>
+                                    <a href="www.youtube.com">View on the App Store</a> 
+                                </Col>
+                            </Row>
+                        </div>
+                        <div style={{ marginTop: "150px" }}>
+                            <Row>
+                                <Col className="col-2 text-left" style={{ fontSize: "1.2vw", paddingTop: "80px" }}>  
+                                    003
+                                </Col>
+                                <Col className="col-7 text-left" style={{ fontSize: "7vw", fontWeight:"600", WebkitTextStroke: "7px" }}>  
+                                    <Link to="/view/portfolio/hypremium">Hypremium</Link>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col className="col-2 text-left" style={{ fontSize: "1.2vw", fontWeight:"600" }}>
+                                    2020
+                                </Col>
+                                <Col className="col-7 text-left" style={{ fontSize: "1.2vw" }}>
+                                    UX/UI Design and Development 
+                                </Col>
+                                <Col className="col-3 text-right" style={{ fontSize: "1.2vw", paddingTop: "5px" }}>
+                                    <a href="www.youtube.com">View on the App Store</a> 
+                                </Col>
+                            </Row>
+                        </div>
+                        <div style={{ marginTop: "150px" }}>
+                            <Row>
+                                <Col className="col-2 text-left" style={{ fontSize: "1.2vw", paddingTop: "80px" }}>  
+                                    004
+                                </Col>
+                                <Col className="col-7 text-left" style={{ fontSize: "7vw", fontWeight:"600", WebkitTextStroke: "7px" }}>  
+                                    <Link to="//view/portfolio/juice">The Juice App</Link>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col className="col-2 text-left" style={{ fontSize: "1.2vw", fontWeight:"600" }}>
+                                    2020
+                                </Col>
+                                <Col className="col-7 text-left" style={{ fontSize: "1.2vw" }}>
+                                    UX/UI Design and Development 
+                                </Col>
+                                <Col className="col-3 text-right" style={{ fontSize: "1.2vw", paddingTop: "5px" }}>
+                                    <a href="www.youtube.com">View on the App Store</a> 
+                                </Col>
+                            </Row>
+                            <div style={{ height: "150px" }}>
 
                             </div>
-                        </Row>
+                        </div>
                     </Col>
                 </Row>
             </Container>
         </div>
-    )
+    )}
 }
 
 export default Portfolio

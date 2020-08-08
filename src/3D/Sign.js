@@ -17,7 +17,7 @@ export default function Model(props) {
         geometry={nodes.opensign_turbo001.geometry}
         position={[-1.07, 0.65, -1.95]}
         rotation={[Math.PI / 2, 0, 0]}
-        scale={[0.1, 0.1, 0.1]}
+        scale={[0.15, 0.15, 0.15]}
       />
     </group>
   )

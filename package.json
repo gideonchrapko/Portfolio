@@ -17,6 +17,7 @@
     "react-scripts": "^3.4.1",
     "react-three-fiber": "^4.2.18",
     "react-transition-group": "^4.4.1",
+    "scroll-snap": "^3.0.2",
     "three": "^0.119.0"
   },
   "scripts": {

@@ -1,9 +1,8 @@
 import * as THREE from 'three'
 import React, { Suspense } from 'react'
 import { Canvas, Dom } from 'react-three-fiber'
-import { withRouter } from "react-router-dom";
 import Controls from './Controls'
-// import Environment from './Environment'
+import { OrbitControls } from 'drei'
 
 import Sign from "./Sign"
 
@@ -12,23 +11,24 @@ const ThreeD = () => {
   return (
       <>
           <Canvas 
-            concurrent
-            // noEvents={active}s
             pixelRatio={window.devicePixelRatio}
             camera={{ position: [7, 7, 1] }}
             gl={{ antialias: true }}
             onCreated={({ gl, scene }) => {
               gl.toneMapping = THREE.ACESFilmicToneMapping
               gl.outputEncoding = THREE.sRGBEncoding
-              // scene.background = new THREE.WebGLRenderer( { alpha: #F8F8EC } )
-              scene.background = new THREE.Color("#F8F8EC")
-              
-              // scene.background = new THREE.Color("0x000000, 0")
-              //scene.background.convertSRGBToLinear()
+              scene.background = new THREE.Color('#F8F8ED')
           }}>
-          <Controls />
+          <OrbitControls
+            autoRotate
+            rotateSpeed={1}
+          />
+          <ambientLight intensity={0.2} />
+          <directionalLight castShadow position={[10, 20, 20]} intensity={1} shadow-bias={-0.0005} />
+          <directionalLight castShadow position={[-10, 5, -20]} angle={2} color="blue" intensity={5} />
+          <directionalLight castShadow position={[-10, 20, 0]} angle={0} color="green" intensity={5} />
+          <pointLight castShadow position={[-10, -10, -10]} color="white" rotation={[0, 0, 0]} intensity={10} />
           <Suspense fallback={<Dom center>Loading</Dom>}>
-            {/* <Environment /> */}
               <Sign />
           </Suspense>
           </Canvas>
@@ -36,4 +36,4 @@ const ThreeD = () => {
     )
   }
 
-export default withRouter(ThreeD);
+export default (ThreeD);
