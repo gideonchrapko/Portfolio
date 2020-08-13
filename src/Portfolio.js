@@ -62,7 +62,7 @@ container = React.createRef()
                                 </Col>
                                 <Col className="col-7 text-left" style={{ fontSize: "7vw", fontWeight:"600", WebkitTextStroke: "5px" }}>  
                                     <Link to="/view/portfolio/juice">The Juice App</Link>
-                                    <Image src={Arrow} style={{ position: "absolute" }} />
+                                    <Image src={Arrow} style={{ position: "absolute", width: "10%"  }} />
                                 </Col>
                                 {/* <Col>
                                     <Image src={Arrow} className="position-relative background" style={{ position: "relative", zIndex: "-9999999", mixBlendMode: "multiply" }} />
@@ -88,7 +88,7 @@ container = React.createRef()
                                 </Col>
                                 <Col className="col-7 text-left" style={{ fontSize: "7vw", fontWeight:"600", WebkitTextStroke: "5px" }}>  
                                     <Link to="/view/portfolio/westcoastcustoms">WestCoastCustoms</Link>
-                                    <Image src={Arrow} style={{ position: "absolute" }} />
+                                    <Image src={Arrow} style={{ position: "absolute", width: "10%" }} />
                                 </Col>
                             </Row>
                             <Row>
@@ -110,7 +110,7 @@ container = React.createRef()
                                 </Col>
                                 <Col className="col-7 text-left" style={{ fontSize: "7vw", fontWeight:"600", WebkitTextStroke: "5px" }}>  
                                     <Link to="/view/portfolio/hypremium">Hypremium</Link>
-                                    <Image src={Arrow} style={{ position: "absolute" }} />
+                                    <Image src={Arrow} style={{ position: "absolute", width: "10%"  }} />
                                 </Col>
                             </Row>
                             <Row>
@@ -132,7 +132,7 @@ container = React.createRef()
                                 </Col>
                                 <Col className="col-7 text-left" style={{ fontSize: "7vw", fontWeight:"600", WebkitTextStroke: "5px" }}>  
                                     <Link to="//view/portfolio/juice">The Juice App</Link>
-                                    <Image src={Arrow} style={{ position: "absolute" }} />
+                                    <Image src={Arrow} style={{ position: "absolute", width: "10%"  }} />
                                 </Col>
                             </Row>
                             <Row>

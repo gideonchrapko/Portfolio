@@ -38,11 +38,11 @@ const Hypremium = () => {
                 <Row  className="FixedHeightContainer">
                     <Col className="Content">
                         <Row>
-                            <Col className="col-3 text-right offset-9" style={{ marginTop: "30px", padding: "40px" }}>
-                                <h1>Project Name</h1>
-                                <h5>Year</h5>
-                                <h5>Location</h5>
-                                <h5>Project Title</h5>
+                            <Col className="col-3 text-right offset-8" style={{ marginTop: "30px", padding: "40px" }}>
+                                <h1>Hypremium</h1>
+                                <h5>2017-2019</h5>
+                                <h5>Los Angeles</h5>
+                                <h5>UI/UX Design</h5>
                             </Col>
                         </Row>
                         <Row>
@@ -65,6 +65,11 @@ const Hypremium = () => {
                                 sint occaecat cupidatat non proident, sunt in culpa qui 
                                 officia deserunt mollit anim id est laborum.
                             </h4>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col>
+                                <Image />
                             </Col>
                         </Row>
                         <Row>
