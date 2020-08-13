@@ -3,9 +3,10 @@ import { TimelineMax as Timeline, Power1 } from 'gsap';
 const getDefaultTimeline = (node, delay) => {
   const timeline = new Timeline({ paused: true });
   const content = node.querySelector('.nav');
+  const background = node.querySelector('.portBackground');
 
   timeline
-    // .from(node, 0.3, { display: 'none', autoAlpha: 0, delay, ease: Power1.easeIn })
+    .from(background, 1, { display: 'none', y: 500, delay, ease: Power1.easeIn })
     .to(content, 0.5, { y: 20, opacity: 1, delay })
 
   return timeline;
@@ -21,18 +22,17 @@ const getHomeTimeline = (node, delay) => {
   return timeline;
 }
 
-export const play = (pathname, node, appears) => {
+export const playOne = (pathname, node, appears) => {
   const delay = appears ? 0 : 0.5
   let timeline
 
-  if (pathname === '/')
+  if (pathname === '/') 
     timeline = getHomeTimeline(node, delay)
-
-
-  else
-    // timeline = getDefaultTimeline(node, delay)
-    timeline = getDefaultTimeline(node, delay)
-
+   else 
+      timeline = getDefaultTimeline(node, delay)
+     
+     
+      
   timeline.play()
 }
 

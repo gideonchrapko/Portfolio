@@ -22,15 +22,22 @@ const Landing = () => {
                         </div>
                     </Col>
                 </Row>
-                <Row>
+                {/* <Row>
                     <Col className="col-12 text-right" style={{ fontSize: "25pt", WebkitTextStroke: "3px" }}>
                         <Link to="/view/portfolio">Enter</Link>
                     </Col>
-                </Row>
+                </Row> */}
             </Container >
             <Container style={{ width: "70%", right: "0", bottom: "10px", position: "absolute", zIndex: "-1", height: "80%" }}>
                 <ThreeD />
             </Container >
+            <Container>
+                <Row>
+                    <Col className="col-11 text-right" style={{ fontSize: "25pt", WebkitTextStroke: "3px", bottom: "0", position: "absolute" }}>
+                        <Link to="/view/portfolio">Enter</Link>
+                    </Col>
+                </Row>
+            </Container>
         </div>
     );
 }

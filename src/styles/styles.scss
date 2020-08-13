@@ -20,9 +20,18 @@ body{
 
 Canvas {
   height: 200px;
-  
+
 }
 
+.portBackground {
+  background-color: #EAF5DF; 
+  height: 80vh;
+  bottom: 0px;
+  width: 100%;
+  position: fixed;
+  mix-blend-mode: multiply;
+  border-radius: 41px 41px 0px 0px;
+}
 // #container {
 //   display: flex;
 //   flex-direction: column;

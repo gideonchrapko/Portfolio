@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { Row, Container, Col, Image } from 'react-bootstrap';
 import Back from "./landing/skins/back.svg";
 import Arrow from "./landing/skins/arrowSmall.svg"
+import Profile from "./landing/skins/profile.svg"
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -33,17 +34,8 @@ container = React.createRef()
 
     render () {
     return (
-        <div >
-            <div 
-                style={{ 
-                    backgroundColor: "#FFBA00", 
-                    height: "80vh", 
-                    bottom: "0px", 
-                    width: "100%",
-                    position: "fixed",
-                    mixBlendMode: "multiply",
-                    borderRadius: "41px 41px 0px 0px",
-                    }}>
+    <div>
+            <div className="portBackground">
             </div>
             <Container>
                 <Row >
@@ -52,21 +44,25 @@ container = React.createRef()
                             Back
                         </Link>
                     </Col>
+                    <Col className="position-fixed background col-3 offset-8" style={{ marginTop: "100px" }} >
+                            <Image src={Profile}/>
+                        </Col>
                     <Col className="position-fixed background col-lg-2 col-4 offset-1" style={{ left: "-45px", marginTop: "100px" }}> 
                         <Image src={Back} />
                     </Col>
                 </Row>
             </Container>
             <Container>
-                <Row  className="FixedHeightContainer">
+                <Row  className="FixedHeightContainer background">
                     <Col className="Content" id="container" ref={this.container}>
-                        <div style={{ marginTop: "150px" }}>
-                            <Row>
+                        <div style={{ marginTop: "150px" }} className="background">
+                            <Row style={{ borderLeft: "5px solid black" }}>
                                 <Col className="col-2 text-left" style={{ fontSize: "1.2vw", paddingTop: "80px" }}>  
                                     001
                                 </Col>
                                 <Col className="col-7 text-left" style={{ fontSize: "7vw", fontWeight:"600", WebkitTextStroke: "5px" }}>  
                                     <Link to="/view/portfolio/juice">The Juice App</Link>
+                                    <Image src={Arrow} style={{ position: "absolute" }} />
                                 </Col>
                                 {/* <Col>
                                     <Image src={Arrow} className="position-relative background" style={{ position: "relative", zIndex: "-9999999", mixBlendMode: "multiply" }} />
@@ -86,12 +82,13 @@ container = React.createRef()
                             </Row>
                         </div>
                         <div style={{ marginTop: "150px" }}>
-                            <Row>
+                            <Row style={{ borderLeft: "5px solid black" }}>
                                 <Col className="col-2 text-left" style={{ fontSize: "1.2vw", paddingTop: "80px" }}>  
                                     002
                                 </Col>
                                 <Col className="col-7 text-left" style={{ fontSize: "7vw", fontWeight:"600", WebkitTextStroke: "5px" }}>  
                                     <Link to="/view/portfolio/westcoastcustoms">WestCoastCustoms</Link>
+                                    <Image src={Arrow} style={{ position: "absolute" }} />
                                 </Col>
                             </Row>
                             <Row>
@@ -102,17 +99,18 @@ container = React.createRef()
                                     UX/UI Design and Development 
                                 </Col>
                                 <Col className="col-3 text-right" style={{ fontSize: "1.2vw", paddingTop: "5px" }}>
-                                    <a href="www.youtube.com">View on the App Store</a> 
+                                    <a href="www.youtube.com">View Temporary Domain</a> 
                                 </Col>
                             </Row>
                         </div>
                         <div style={{ marginTop: "150px" }}>
-                            <Row>
+                            <Row style={{ borderLeft: "5px solid black" }}>
                                 <Col className="col-2 text-left" style={{ fontSize: "1.2vw", paddingTop: "80px" }}>  
                                     003
                                 </Col>
                                 <Col className="col-7 text-left" style={{ fontSize: "7vw", fontWeight:"600", WebkitTextStroke: "5px" }}>  
                                     <Link to="/view/portfolio/hypremium">Hypremium</Link>
+                                    <Image src={Arrow} style={{ position: "absolute" }} />
                                 </Col>
                             </Row>
                             <Row>
@@ -123,17 +121,18 @@ container = React.createRef()
                                     UX/UI Design and Development 
                                 </Col>
                                 <Col className="col-3 text-right" style={{ fontSize: "1.2vw", paddingTop: "5px" }}>
-                                    <a href="www.youtube.com">View on the App Store</a> 
+                                    <a href="https://apps.apple.com/us/app/hypremium/id1233398263">View on the App Store</a> 
                                 </Col>
                             </Row>
                         </div>
                         <div style={{ marginTop: "150px" }}>
-                            <Row>
+                            <Row style={{ borderLeft: "5px solid black" }}>
                                 <Col className="col-2 text-left" style={{ fontSize: "1.2vw", paddingTop: "80px" }}>  
                                     004
                                 </Col>
                                 <Col className="col-7 text-left" style={{ fontSize: "7vw", fontWeight:"600", WebkitTextStroke: "5px" }}>  
                                     <Link to="//view/portfolio/juice">The Juice App</Link>
+                                    <Image src={Arrow} style={{ position: "absolute" }} />
                                 </Col>
                             </Row>
                             <Row>
