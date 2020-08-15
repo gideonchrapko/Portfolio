@@ -28,7 +28,7 @@ const Landing = () => {
                     </Col>
                 </Row> */}
             </Container >
-            <Container style={{ width: "70%", right: "0", bottom: "10px", position: "absolute", zIndex: "-1", height: "80%" }}>
+            <Container style={{ width: "100%", left: "0", right: "0", bottom: "0px", position: "absolute", zIndex: "-1", height: "100%" }}>
                 <ThreeD />
             </Container >
             <Container>
