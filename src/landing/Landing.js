@@ -10,11 +10,11 @@ import "../styles/styles.scss"
 const Landing = () => {
 
     return (
-        <div>
-            <Container className="left background" style={{ left: "0", width: "39%", position: "fixed"}}>
-                <Row >
+        <div className="background" >
+            <Container className="left" style={{ left: "0", width: "39%", position: "fixed"}}>
+                <Row>
                     <Col className="col-lg-4 col-6 position-fixed"> 
-                        <Image src={BOne} style={{ marginTop: "60px" }} />
+                        <Image src={BOne} style={{ marginTop: "60px" }}/>
                     </Col>
                     <Col className="col-8 offset-1">
                         <div style={{ fontSize: "3vw", WebkitTextStroke: "3px", marginTop: "150px" }}>
@@ -28,7 +28,7 @@ const Landing = () => {
                     </Col>
                 </Row> */}
             </Container >
-            <Container style={{ width: "100%", left: "0", right: "0", bottom: "0px", position: "absolute", zIndex: "-1", height: "100%" }}>
+            <Container style={{ width: "150%", left: "0", right: "0", bottom: "0px", position: "absolute", zIndex: "-1", height: "100%" }}>
                 <ThreeD />
             </Container >
             <Container>
@@ -43,10 +43,3 @@ const Landing = () => {
 }
 
 export default Landing;
-
-
-                {/* <Row style={{ bottom: "0px", position: "fixed", padding: "30px" }}>
-                    <Col className="col-12" style={{ fontSize: "25pt", WebkitTextStroke: "3px" }}>
-                        <Link to="/view/portfolio">View</Link>
-                    </Col>
-                </Row> */}

@@ -31,8 +31,6 @@ export const playOne = (pathname, node, appears) => {
    else 
       timeline = getDefaultTimeline(node, delay)
      
-     
-      
   timeline.play()
 }
 
