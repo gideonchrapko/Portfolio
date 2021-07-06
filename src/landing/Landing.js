@@ -18,7 +18,7 @@ const Landing = () => {
                     </Col>
                     <Col className="col-8 offset-1">
                         <div style={{ fontSize: "3vw", WebkitTextStroke: "3px", marginTop: "150px" }}>
-                            executing operation gaza crip 
+                            execute iron dome, fire the space cannons
                         </div>
                     </Col>
                 </Row>
