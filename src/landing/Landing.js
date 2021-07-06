@@ -18,7 +18,7 @@ const Landing = () => {
                     </Col>
                     <Col className="col-8 offset-1">
                         <div style={{ fontSize: "3vw", WebkitTextStroke: "3px", marginTop: "150px" }}>
-                            death to your family for 1000 years
+                            executing operation gaza crip 
                         </div>
                     </Col>
                 </Row>
