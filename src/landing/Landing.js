@@ -18,7 +18,7 @@ const Landing = () => {
                     </Col>
                     <Col className="col-8 offset-1">
                         <div style={{ fontSize: "3vw", WebkitTextStroke: "3px", marginTop: "150px" }}>
-                            Alright buddy I am going to come to your house and fucking get crazy, last chance at not fucking it all up
+                            death to your family for 1000 years
                         </div>
                     </Col>
                 </Row>
@@ -26,7 +26,7 @@ const Landing = () => {
                     <Col className="col-12 text-right" style={{ fontSize: "25pt", WebkitTextStroke: "3px" }}>
                         <Link to="/view/portfolio">Enter</Link>
                     </Col>
-                </Row> */}~
+                </Row> */}
             </Container >
             <Container style={{ width: "150%", left: "0", right: "0", bottom: "0px", position: "absolute", zIndex: "-1", height: "100%" }}>
                 <ThreeD />
