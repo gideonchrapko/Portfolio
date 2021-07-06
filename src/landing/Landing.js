@@ -18,7 +18,7 @@ const Landing = () => {
                     </Col>
                     <Col className="col-8 offset-1">
                         <div style={{ fontSize: "3vw", WebkitTextStroke: "3px", marginTop: "150px" }}>
-                            Hello, my name is Gideon Chrapko. I'm a UX Designer and Front End Developer. 
+                            Hello stinky you are fucked!!!!
                         </div>
                     </Col>
                 </Row>
