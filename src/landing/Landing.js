@@ -18,7 +18,7 @@ const Landing = () => {
                     </Col>
                     <Col className="col-8 offset-1">
                         <div style={{ fontSize: "3vw", WebkitTextStroke: "3px", marginTop: "150px" }}>
-                            Ok man you better back off right now 
+                            If you do not want to get fucked then I suggest you fuck off!!! now
                         </div>
                     </Col>
                 </Row>
